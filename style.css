@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --dark-blue: #273c75;
+  --darker-blue: #192a56;
+  --green: #44bd32;
+  --light-grey: #353b48;
+  --white: #f5f6fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: var(--darker-blue);
+  background-color: var(--white);
+}
+
+h1 {
+  font-family: Playfair Display, serif;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+/*header*/
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  top: 0;
+  left: 0%;
+  right: 0%;
+  z-index: 1;
+  min-height: 75px;
+  padding: 5px 20px;
+}
+
+header h1 {
+  text-decoration: none;
+  color: var(--white);
+}
+
+#nav-bar {
+}
+
+#nav-bar a {
+  margin: 5px 50px;
+  text-decoration: none;
+  color: var(--white)
+  font-weight: 500;
+}
+
+/*hero*/
+
+#hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#hero h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form #email {
+  font-family: "Poppins", sans-serif;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid var(--green);
+  border-radius: 10px;
+}
+
+#form #submit {
+  background-color: var(--green);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--white);
+  padding: 10px 30px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 10px;
+}
+
+/*features*/
+#features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0px 50px;
+}
+
+.grid {
+  display: flex;
+  padding: 30px;
+}
+
+.icon {
+  padding-right: 50px;
+}
+
+/*video*/
+#works {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*pricing*/
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  width: 350px;
+  margin: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card .price {
+  background-color: var(--darker-blue);
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+
+.card .desc {
+  padding: 50px 20px;
+}
+
+.desc h2 {
+  margin-bottom: 20px;
+}
+
+.card .buy-btn {
+  background-color: var(--green);
+  color: var(--white);
+  text-decoration: none;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+/*footer*/
+footer {
+  background-color: #dcdde1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: var(--darker-blue);
+}
+
+footer a {
+  text-decoration: none;
+  color: #192a56;
+  font-weight: 500;
+}
+
+footer li {
+  display: inline;
+  padding: 2rem 2rem 0 2rem;
+}
+
+footer .footer-contact {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/*media query*/
+@media (max-width: 767px) {
+
+  .grid {
+    flex-direction: column;
+  }
+
+  #pricing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 250px;
+  }
+}
